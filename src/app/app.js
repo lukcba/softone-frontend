@@ -5,6 +5,7 @@ angular.module('SoftOne', [
   'ui.bootstrap',
   'ui.sortable',
   'ui.router',
+  'ngResource',
   'ngTouch',
   'toastr',
   'smart-table',
@@ -15,4 +16,7 @@ angular.module('SoftOne', [
 
   'SoftOne.theme',
   'SoftOne.pages'
-]);
+]).run(['$rootScope','$http',"$state", function($rootScope,$http, $state){
+
+
+}]);

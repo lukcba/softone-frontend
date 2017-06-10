@@ -4,6 +4,7 @@
 
   angular.module('SoftOne.pages', [
     'ui.router',
+    'softOne.resources',
 
     'SoftOne.pages.dashboard',
     
