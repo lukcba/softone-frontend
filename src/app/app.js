@@ -13,7 +13,8 @@ angular.module('SoftOne', [
   'ui.slimscroll',
   'ngJsTree',
   'angular-progress-button-styles',
-
+  'SoftOne.resources',
+  'SoftOne.config',
   'SoftOne.theme',
   'SoftOne.pages'
 ]).run(['$rootScope','$http',"$state", function($rootScope,$http, $state){

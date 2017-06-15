@@ -4,10 +4,9 @@
 
   angular.module('SoftOne.pages', [
     'ui.router',
-    'softOne.resources',
-
+    'SoftOne.resources',
     'SoftOne.pages.dashboard',
-    
+      'SoftOne.pages.operator'
   ])
       .config(routeConfig);
 

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('softOne.resource.base', ['ngResource'])
+angular.module('SoftOne.resource.base', ['ngResource'])
     .factory('Resource', [
         '$resource',
         function ($resource) {

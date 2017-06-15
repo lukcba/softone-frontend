@@ -1,4 +1,5 @@
 'use strict';
-angular.module('softOne.resources', ['ngResource', 
-	'softOne.resource.base'
+angular.module('SoftOne.resources', ['ngResource',
+	'SoftOne.resource.base',
+	'SoftOne.resource.operator'
 	]);

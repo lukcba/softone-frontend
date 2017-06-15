@@ -1,0 +1,35 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" ng-hide="operator.id"><span> <i class="fa fa-asterisk"></i>Crear Operador</span></h5>
+    	<h5 class="modal-title" ng-show="operator.id"><span> <i class="fa fa-pencil"></i> {{operator.name}}</span></h5>
+    </div>
+    <div class="modal-header modal-header-mod">
+        <div class="col-md-12 col-sm-12 modal-title-container">
+            <span class="modal-title-mod">Habilitado</span>
+            <div class="col-md-3 col-sm-2 pull-right text-right sinpaddingmodal">
+                <switcher true-label="SI" false-label="NO" ng-model="operator.enabled"></switcher>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body modal-body-mod">
+        <form name="formOperator" novalidate>
+            <div class="col-md-12">
+                <div class="form-group  form-group-m col-md-12 col-sm-12 col-xs-12 sinpadding">
+                    <div class="form-title-container">
+                        <label>Nombre</label>
+                        <span ng-show="!operator.name"><i class="fa fa-asterisk size-icon-form"></i></span>
+                    </div>
+                    <input type="text" class="form-control" autocomplete="off" ng-model="operator.name" placeholder="Nombre" required>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-sm btn-default" ng-click="$dismiss()">Cancelar</button>
+            <button type="button" class="btn btn-sm btn-primary" ng-click="save()" ng-disabled="!formOperator.$valid">Guardar</button>
+            <span class="pull-left footer-msg"><i class="fa fa-asterisk size-icon-form"></i><small> Campos Requeridos</small></span>
+        </div>
+    </div>
+</div>
