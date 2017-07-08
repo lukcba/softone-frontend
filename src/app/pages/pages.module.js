@@ -5,14 +5,14 @@
   angular.module('SoftOne.pages', [
     'ui.router',
     'SoftOne.resources',
-    'SoftOne.pages.dashboard',
-      'SoftOne.pages.operator'
+    'SoftOne.pages.home',
+    'SoftOne.pages.config',
+    'SoftOne.pages.config.operator'
   ])
       .config(routeConfig);
 
-  /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/home');
   }
 
 })();

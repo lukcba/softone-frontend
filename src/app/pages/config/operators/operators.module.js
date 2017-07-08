@@ -1,16 +1,16 @@
 'use strict';
 
-angular.module('SoftOne.pages.operator', ['SoftOne.resources'])
+angular.module('SoftOne.pages.config.operator', ['SoftOne.resources'])
     .config(function ($stateProvider) {
         $stateProvider
-            .state('config.general.operators', {
+            .state('config.operators', {
                 url: '/operators',
-                parent: 'platform',
-                templateUrl: 'app/pages/operators/list.html',
+                parent: 'home',
+                templateUrl: 'app/pages/config/operators/list.html',
                 controller: 'OperatorsListCtrl',
                 title: 'Operadores',
                 sidebarMeta: {
-                    order: 5,
+                    order: 1,
                     icon: 'fa fa-feed'
                 }
             });
@@ -46,7 +46,7 @@ angular.module('SoftOne.pages.operator', ['SoftOne.resources'])
                 animation: true,
                 controller: 'OperatorsCreateEditCtrl',
                 backdrop: 'static',
-                templateUrl: 'app/pages/operators/create.html',
+                templateUrl: 'app/pages/config/operators/create.html',
                 size: 'md',
                 resolve: {
                     operatorInstance: function () {

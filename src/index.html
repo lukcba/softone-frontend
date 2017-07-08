@@ -22,24 +22,8 @@
 </head>
 <body>
 <div class="body-bg"></div>
-<main ng-if="$pageFinishedLoading" ng-class="{ 'menu-collapsed': $baSidebarService.isMenuCollapsed() }">
 
-  <ba-sidebar></ba-sidebar>
-  <page-top></page-top>
-
-  <div class="al-main">
-    <div class="al-content">
-      <content-top></content-top>
-      <div ui-view autoscroll="true" autoscroll-body-top></div>
-    </div>
-  </div>
-
-  <footer class="al-footer clearfix">
-    <div class="al-footer-right">SoftOne 2017 <i class="fa fa-lightbulb-o"></i></div>
-  </footer>
-
-  <back-top></back-top>
-</main>
+<div ui-view></div>
 
 <div id="preloader" ng-show="!$pageFinishedLoading">
   <div></div>
